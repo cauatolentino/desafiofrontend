@@ -4,14 +4,16 @@
             <h2>Tabela de Usuários Cadastrados</h2>
             <table id="tabelaPessoas">
                 <thead id="headPessoas">
-                    <th>Nome</th>
-                    <th>Email</th>
-                    <th>CEP</th>
-                    <th>Rua</th>
-                    <th>Bairro</th>
-                    <th>Cidade</th>
-                    <th>Estado</th>
-                    <th>Origem</th>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>CEP</th>
+                        <th>Rua</th>
+                        <th>Bairro</th>
+                        <th>Cidade</th>
+                        <th>Estado</th>
+                        <th>Origem</th>
+                    </tr>
                 </thead>
                 <tbody id="bodyPessoas">
                     <tr v-for="(pessoa, i) in $store.state.listaPessoas" :key="i">
