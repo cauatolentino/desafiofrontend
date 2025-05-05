@@ -3,7 +3,7 @@ import { mount } from '@vue/test-utils'
 import TabelaPessoas from '@/components/TabelaPessoas.vue'
 import { createStore } from 'vuex'
 
-// Mock do Vuex
+// Vuex controlado para testes
 const criarStoreComPessoas = (pessoas = []) => {
   return createStore({
     state() {
@@ -19,6 +19,7 @@ const criarStoreComPessoas = (pessoas = []) => {
   })
 }
 
+// Os 3 testes da TabelaPessoas.vue
 describe('TabelaPessoas.vue', () => {
   let wrapper
   let store
@@ -33,7 +34,7 @@ describe('TabelaPessoas.vue', () => {
         bairro: 'Centro',
         cidade: 'Rio de Janeiro',
         estado: 'RJ',
-        origem: 'Web'
+        origem: 'Digital'
       }
     ])
 
